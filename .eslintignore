@@ -1,0 +1,5 @@
+# .eslintrc.json
+vite.config.ts
+./test/**
+/tests/*.spec.ts
+/tests-examples/*.spec.ts
