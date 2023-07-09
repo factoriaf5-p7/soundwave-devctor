@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     --accent: #bc3a80;
     --circle-accent: #bc3a801a;
     --circle-neutral: #3457b21a;
+    --white: #ffffff;
 }
 
 /***
@@ -119,5 +120,11 @@ meter {
 body{
   font-size: 1.2rem;
   font-family: "Poppins";
+  color: var(--white);
+}
+
+@media (width > 1000px) {
+    
+  background-size: 880px, 100px, 30px, cover;
 }
 `

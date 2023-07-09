@@ -5,6 +5,11 @@ import { test, expect, type Page } from '@playwright/test';
 test.describe('Soundwave App', () => {
   let browser;
   let page;
+  
+  test.use({
+    viewport: { width: 420, height: 1200 },
+    isMobile: true
+  })
 
   test.beforeEach(async ({ page }) => {
 
@@ -13,6 +18,13 @@ test.describe('Soundwave App', () => {
 
   test.afterAll(async () => {
 
+  });
+
+  test('should have the expected title', async ({ page }) => {
+    const expectedTitle = /home/i; // Replace with the title you expect
+  
+    const pageTitle = await page.title();
+    expect(pageTitle).toBe(expectedTitle);
   });
 
   test('should display the logo with alt text', async ({ page }) => {
