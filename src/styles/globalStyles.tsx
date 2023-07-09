@@ -2,24 +2,17 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 :root {
-  --pink: pink;
-  --color-primary-dark: #2F303A;
-  --color-primary-light: #202027;
-  --color-secondary-dark: #1762A7;
-  --color-secondary: #2180d8;
-  --color-secondary-light: #2796ff;
-  --color-general-background: #bc3a801a;
-  --color-circle-1: #3457b21a;
-  --color-circle-2-3: #202027;
-  --color-nav-hover: #2E3852;
-  --color-border-input: #596da0;
-  --color-border-input-focus: #2796ff;
-  --color-accent-text: #2796ff;
-
-  --padding-s: 12px;
-  --padding-m: 16px;
-  --padding-l: 24px;
-
+    --darker: #2f303a;
+    --black: #202027;
+    --grey: #adadad;
+    --dark: #2e3852;
+    --dark-100: #596da0;
+    --sky-300: #1762a7;
+    --sky-400: #2180d8;
+    --sky-500: #2796ff;
+    --accent: #bc3a80;
+    --circle-accent: #bc3a801a;
+    --circle-neutral: #3457b21a;
 }
 
 /***
@@ -124,7 +117,7 @@ meter {
 }
 
 body{
-  color: blue;
+  font-size: 1.2rem;
   font-family: "Poppins";
 }
 `
