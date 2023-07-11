@@ -6,13 +6,16 @@ type Navigation = Omit<routerType, 'element'>
 
 export const NavStyled = styled.nav`
 color: inherit;
+margin-inline-start: auto;
 `
 
 export const NavList = styled.ul`
   display: flex;
+  gap: 1rem;
 `
 
 const NavItem = styled.li`
+  text-transform: capitalize;
 `
 
 interface NavProps {

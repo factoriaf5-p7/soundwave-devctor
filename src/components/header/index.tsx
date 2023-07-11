@@ -4,7 +4,9 @@ import { Nav, NavStyled } from '../nav'
 import pagesData from '../../router/pagesData'
 
 const Container = styled.div`
-padding:  30px;
+padding: 20px  30px;
+max-width: var(--lg);
+margin-inline: auto;
 display: flex;
 align-items: center;
 ${NavStyled} {

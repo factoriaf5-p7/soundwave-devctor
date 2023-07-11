@@ -14,6 +14,12 @@ export const GlobalStyle = createGlobalStyle`
     --circle-accent: #bc3a801a;
     --circle-neutral: #3457b21a;
     --white: #ffffff;
+
+    /* Sizing */
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
 }
 
 /***
@@ -123,8 +129,8 @@ body{
   color: var(--white);
 }
 
-@media (width > 1000px) {
+/* @media (width > 1001px) {
     
   background-size: 880px, 100px, 30px, cover;
-}
+} */
 `
