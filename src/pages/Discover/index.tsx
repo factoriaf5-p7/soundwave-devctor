@@ -2,6 +2,7 @@ import { Title } from '../../components/UI/title'
 import { IconTextCard } from '../../components/UI/icon-text-card'
 import { styled } from 'styled-components'
 import useDocumentTitle from '../../hooks/useDocumentTitle'
+import { Link } from 'react-router-dom'
 
 const IconContainer = styled.div`
   display: flex;
@@ -40,11 +41,13 @@ export const Discover = (): JSX.Element => {
       <Half>
         <Title isBold={false}>Discover new music</Title>
         <IconContainer>
+          <Link to="/">
           <IconTextCard
             icon='/microphone.svg'
             alt='Microphone icon'
             title='Charts'
-          />
+            />
+            </Link>
           <IconTextCard
             icon='/albums.svg'
             alt='Albums icon'

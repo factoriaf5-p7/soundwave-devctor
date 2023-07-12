@@ -20,13 +20,8 @@ test.describe('Soundwave App', () => {
 
   });
 
-  test('should have the expected title', async ({ page }) => {
-    const expectedTitle = "Home"; // Replace with the title you expect
-  
-    await page.waitForLoadState('domcontentloaded', {timeout: 4000} );
-    const pageTitle = await page.title()
-    console.log(page)
-    expect(pageTitle).toBe(expectedTitle);
+  test('Should have "Home" in title page', async ({ page }) => {
+    await expect(page).toHaveTitle(/home/i)
   });
 
   test('should display the logo with alt text', async ({ page }) => {
@@ -38,11 +33,6 @@ test.describe('Soundwave App', () => {
     const navigationItems = await page.$$eval('nav ul li', (items) => items.map((item) => item.textContent));
     expect(navigationItems.length).toBeGreaterThan(0);
   });
-
-  // test('should display the hero image with alt text', async ({ page }) => {
-  //   const heroImage = await page.waitForSelector('img[alt="Hero Image"]');
-  //   expect(heroImage).not.toBeNull();
-  // });
 
   test('should display the title "Feel the music"', async ({ page }) => {
     const title = await page.waitForSelector('h1');
