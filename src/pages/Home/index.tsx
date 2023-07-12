@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 0 30px;
   margin-block-start: auto;
   margin-block-end: 13rem;
-  max-width: 3rem;
+  max-width: 27rem;
   flex:1;
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +16,7 @@ const Container = styled.div`
 
 const Section = styled.section`
 display: flex;
+
 @media (width > 1024px) {
   background-image: url(/landing-page-girl.png);
   background-repeat: no-repeat;
@@ -24,6 +25,7 @@ display: flex;
   max-width: var(--xl);
   margin: 0 auto;
   flex: 1;
+
   ${Container} {
     & * + * {
       margin-block-start: 1rem;
@@ -32,12 +34,13 @@ display: flex;
     display: block;
     margin-inline-start: auto;
     margin-block-end: auto;
+
     p { max-width: 30ch}
   }
 }
 `
 
-export const Home = (props: any): JSX.Element => {
+export const Home = (): JSX.Element => {
   useDocumentTitle('Home')
   return (
     <>
@@ -45,7 +48,7 @@ export const Home = (props: any): JSX.Element => {
       <Container>
         <Title isBold={false}>Feel the music</Title>
         <p>Stream over 20 thousand songs with a click</p>
-        <BtnSm link='csd'>Join now</BtnSm>
+        <BtnSm link='/join'>Join now</BtnSm>
     </Container>
     </Section>
     </>

@@ -5,7 +5,7 @@ import pagesData from '../../router/pagesData'
 
 const Container = styled.div`
 padding: 20px  30px;
-max-width: var(--lg);
+max-width: var(--xl);
 margin-inline: auto;
 display: flex;
 align-items: center;

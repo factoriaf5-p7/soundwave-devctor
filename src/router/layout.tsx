@@ -6,7 +6,7 @@ const AppContainer = styled.div`
 background-color: var(--darker);
 display: flex;
 flex-direction: column;
-height: 100vh;
+min-height: 100vh;
 &.home{
   background-image: url(/blue-circle.svg),url(/blue-circle.svg), url(/pink-circle.svg), linear-gradient(var(--darker), var(--darker));
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
@@ -15,6 +15,9 @@ height: 100vh;
 }
   &.home footer {
     display: none;
+  }
+  &.discover footer {
+    display: flex;
   }
 `
 const Main = styled.main`

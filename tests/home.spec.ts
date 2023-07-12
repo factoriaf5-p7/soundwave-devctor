@@ -23,7 +23,9 @@ test.describe('Soundwave App', () => {
   test('should have the expected title', async ({ page }) => {
     const expectedTitle = "Home"; // Replace with the title you expect
   
-    const pageTitle = await page.title();
+    await page.waitForLoadState('domcontentloaded', {timeout: 4000} );
+    const pageTitle = await page.title()
+    console.log(page)
     expect(pageTitle).toBe(expectedTitle);
   });
 

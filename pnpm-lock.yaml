@@ -40,6 +40,9 @@ devDependencies:
   '@fontsource/poppins':
     specifier: ^5.0.4
     version: 5.0.4
+  '@playwright/experimental-ct-react':
+    specifier: ^1.36.0
+    version: 1.36.0(vite@4.3.9)
   '@playwright/test':
     specifier: ^1.35.1
     version: 1.35.1
@@ -1840,6 +1843,41 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
+  /@playwright/experimental-ct-core@1.36.0:
+    resolution: {integrity: sha512-kWVbiGwYHIu4W8giMf+tWfJ9SqekXupd0bMo7VmrufmT06pZtZvWikjEV235xqUFcj4E+KFJs8uF/vmrX3hvVw==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@playwright/test': 1.36.0
+      playwright-core: 1.36.0
+      vite: 4.3.9
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - terser
+    dev: true
+
+  /@playwright/experimental-ct-react@1.36.0(vite@4.3.9):
+    resolution: {integrity: sha512-tJ9Gae1a5Cy+hjIYevlALMjXaCtTuPkUud8j/AxKX9fLJBBMb6LMO3euxII5KyxtbfVTUSgtt+XCHVFI7PJ9aA==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@playwright/experimental-ct-core': 1.36.0
+      '@vitejs/plugin-react': 4.0.0(vite@4.3.9)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - vite
+    dev: true
+
   /@playwright/test@1.35.1:
     resolution: {integrity: sha512-b5YoFe6J9exsMYg0pQAobNDR85T1nLumUYgUTtKm4d21iX2L7WqKq9dW8NGJ+2vX0etZd+Y7UeuqsxDXm9+5ZA==}
     engines: {node: '>=16'}
@@ -1847,6 +1885,17 @@ packages:
     dependencies:
       '@types/node': 20.4.0
       playwright-core: 1.35.1
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /@playwright/test@1.36.0:
+    resolution: {integrity: sha512-yN+fvMYtiyLFDCQos+lWzoX4XW3DNuaxjBu68G0lkgLgC6BP+m/iTxJQoSicz/x2G5EsrqlZTqTIP9sTgLQerg==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@types/node': 20.4.0
+      playwright-core: 1.36.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -3787,6 +3836,12 @@ packages:
 
   /playwright-core@1.35.1:
     resolution: {integrity: sha512-pNXb6CQ7OqmGDRspEjlxE49w+4YtR6a3X6mT1hZXeJHWmsEz7SunmvZeiG/+y1yyMZdHnnn73WKYdtV1er0Xyg==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dev: true
+
+  /playwright-core@1.36.0:
+    resolution: {integrity: sha512-7RTr8P6YJPAqB+8j5ATGHqD6LvLLM39sYVNsslh78g8QeLcBs5750c6+msjrHUwwGt+kEbczBj1XB22WMwn+WA==}
     engines: {node: '>=16'}
     hasBin: true
     dev: true
