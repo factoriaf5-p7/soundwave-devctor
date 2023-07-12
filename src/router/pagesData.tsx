@@ -6,7 +6,7 @@ import { Join } from '../pages/join'
 const pagesData: routerType[] = [
   {
     path: '',
-    element: <Home title='ddd'/>,
+    element: <Home />,
     title: 'home'
   },
   {

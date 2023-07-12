@@ -3,7 +3,7 @@ interface SocialItemProps {
   icon: string
   alt: string
   title: string
-  className: string
+  className?: string
 }
 
 const FooterContainer = styled.footer`
