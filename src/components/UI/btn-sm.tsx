@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import { styled } from 'styled-components'
 
 interface Btn {
@@ -6,9 +7,11 @@ interface Btn {
   className?: string
   link: string
 }
-const BtnSmComponent = ({ children, className }: Btn): JSX.Element => {
+const BtnSmComponent = ({ children, className, link }: Btn): JSX.Element => {
   return (
-    <button className={className}>{ children }</button>
+    <>
+      <button className={className}><Link to={link}>{ children }</Link></button>
+    </>
   )
 }
 

@@ -16,6 +16,9 @@ export const NavList = styled.ul`
 
 const NavItem = styled.li`
   text-transform: capitalize;
+  &:hover {
+    color: var(--dark-100);
+  }
 `
 
 interface NavProps {

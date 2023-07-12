@@ -129,8 +129,9 @@ body{
   color: var(--white);
 }
 
-/* @media (width > 1001px) {
-    
-  background-size: 880px, 100px, 30px, cover;
-} */
+ @media (width < 700px) {
+    body {
+        font-size: 1rem;    
+    }
+} 
 `

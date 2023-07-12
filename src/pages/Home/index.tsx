@@ -20,15 +20,15 @@ display: flex;
 @media (width > 1024px) {
   background-image: url(/landing-page-girl.png);
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 25% 100%;
+  background-size: 30%;
+  background-position: 0 100%;
   max-width: var(--xl);
   margin: 0 auto;
   flex: 1;
 
   ${Container} {
     & * + * {
-      margin-block-start: 1rem;
+      margin-block-start: 2rem;
     }
     max-width: 50%;
     display: block;
